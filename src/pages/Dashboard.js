@@ -9,10 +9,17 @@ function Dashboard() {
             <h1>Dashboard</h1>
             <div className="card-container">
                 <Card
+                    title="CPU Usage"
                     icon='fas fa-microchip'
+                >
+                    teettetete
+                </Card>
+                <Card
+                    title="Test de lorem ipsum dolor sit amet"
+                    icon='fas fa-times'
                 />
                 <Card>
-
+                    test
                 </Card>
             </div>
         </div>

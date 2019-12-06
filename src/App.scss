@@ -3,7 +3,7 @@ $primary: #722c29;
 
 $gray-10: #ccc;
 $gray-25: #eee;
-$gray-75: #2e2e2e;
+$gray-75: #3E3E3E;
 $gray-90: #222;
 
 $border-radius: .3rem;
@@ -119,9 +119,33 @@ h1 {
 	border: $border-standard;
 	border-radius: $border-radius;
 	background: darken($gray-75, 4%);
-	display: block;
-	min-height: 200px;
+	min-height: 80px;
 	width: calc(50% - #{$gutter});
 	flex: 0 0 calc(50% - #{$gutter});
 	margin: #{$gutter / 2};
+	padding: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+
+	.Card-icon {
+		font-size: 2rem;
+		width: 2rem;
+		text-align: center;
+		margin-right: 1rem;
+		flex: 0 0 2rem;
+	}
+
+	.Card-title {
+		padding: .5rem 0;
+		font-size: 1.4rem;
+		font-weight: 300;
+		line-height: 1;
+		flex: 0 0 calc(100% - 3rem);
+	}
+
+	.Card-content {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 1rem 0;
+	}
 }
